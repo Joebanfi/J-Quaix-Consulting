@@ -114,17 +114,61 @@ body {
   font-size: 1.2rem;
 }
 
+/* Experience */
+#experience {
+  background: #fff;
+}
+#experience .experience-container {
+  width: 90%;
+  margin: auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  overflow: wrap;
+}
+#experience .experience-container .experience-row-1,
+.experience-row-2,
+.experience-row-3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  width: 100%;
+}
+
+.image-box {
+  width: 100%;
+}
+
+#experience .experience-container .experience-row-1 img,
+#experience .experience-container .experience-row-2 img,
+#experience .experience-container .experience-row-3 img {
+  padding: 1rem;
+  margin: 0;
+  max-width: 13rem;
+  width: 100%;
+}
+
+#experience .experience-container .experience-row-3 {
+  margin: 0 4rem;
+  padding: 0 7rem;
+}
+
 /* About */
 #about {
-  background: #f4f4f4;
+  background: #fff;
 }
 #about .core-values {
-  background: var(--light-color);
+  background: #fff;
   display: flex;
   padding: 2rem 2rem;
   justify-content: center;
   text-align: center;
   max-width: 1300px;
+  width: 100%;
+  min-width: 1300px;
   margin: auto;
   /* height: 35vh; */
 }
@@ -165,7 +209,23 @@ body {
   margin-right: 0;
   padding: 1rem;
   border: 4px solid var(--primary-color);
-  border-radius: 20%;
+  border-radius: 5%;
+  min-height: 15rem;
+}
+
+#about .core-values p {
+  border-bottom: #bbdef3 solid 1px;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  text-align: start;
+}
+
+#about .core-values p.no-border {
+  border: none;
+}
+
+#about .core-values h2 {
+  margin-bottom: 1rem;
 }
 
 #about .core-values .core-1 {
@@ -426,6 +486,15 @@ img {
   object-fit: cover;
 }
 
+.black {
+  color: black;
+  border: black solid 1px;
+}
+.black:hover {
+  color: rgb(44, 43, 43);
+  border: black solid 1px;
+}
+
 /* Media Quieries */
 /* Tablet */
 @media (max-width: 800px) {
@@ -443,13 +512,25 @@ img {
     display: none;
   }
 
+  #about .core-values {
+    min-width: auto;
+  }
+
+  #about .core-values p {
+    text-align: center;
+  }
+
   #about .flex-container {
     display: grid;
     grid-template-columns: 1fr;
     /* grid-auto-rows: 45vh; */
-    max-height: 500px;
+    max-height: auto;
     background: var(--primary-color);
     color: var(--light-color);
+  }
+
+  #experience h1 {
+    font-size: 1.2rem;
   }
 
   #contact .flex-container {
