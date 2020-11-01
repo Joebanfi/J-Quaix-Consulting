@@ -1,4 +1,11 @@
 /* General */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 img {
   max-width: 100%;
   margin: 1rem auto;
@@ -11,16 +18,33 @@ h1 {
   display: block;
 }
 
+h2 {
+  margin: 2.2rem auto 1rem;
+  display: block;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   line-height: 1.4;
 }
 
+b {
+  font-size: 1.5rem;
+  display: block;
+  margin-top: 2rem;
+}
+
 /* Utility Classes */
 .container-article {
-  width: 80%;
+  width: 75%;
   margin: 2rem auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.indent {
+  margin-left: 4rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.2rem;
 }
