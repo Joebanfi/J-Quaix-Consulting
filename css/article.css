@@ -26,6 +26,8 @@ h2 {
 body {
   font-family: "Open Sans", sans-serif;
   line-height: 1.4;
+  max-width: 1000px;
+  margin: auto;
 }
 
 b {
@@ -41,6 +43,7 @@ b {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .indent {
