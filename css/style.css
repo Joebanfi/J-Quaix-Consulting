@@ -204,6 +204,13 @@ body {
   /* height: 100%; */
 }
 
+.contact-box {
+  width: 32%;
+  text-align: center;
+  margin: 1rem auto;
+  background: transparent;
+}
+
 #about .core-values .core-1,
 #about .core-values .core-2,
 #about .core-values .core-3 {
