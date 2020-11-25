@@ -211,6 +211,13 @@ body {
   background: transparent;
 }
 
+#contact-inner {
+  text-decoration: none;
+  color: rgb(41, 129, 177);
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
 #about .core-values .core-1,
 #about .core-values .core-2,
 #about .core-values .core-3 {
